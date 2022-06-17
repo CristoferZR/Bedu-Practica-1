@@ -5,19 +5,35 @@
   .header{
     margin: 40px 20px 0;
     font-size: 0;
-    height: 45px;
     font-family: sans-serif;
+  }
+  
+  .fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
   }
 
   h1 {
+    font-size: 3rem;
     color: #025157;
     text-align: center;
+    
+  }
+  p{
+    color: #343434;
+  }
+
+  button{
+    color: #fff;
+  background-color: #025157;
   }
 
   li{
     display: inline;
-    margin-right: 25px;
-    margin-left: 25px;
+    margin: 0 25px 0;
   }
 
   .header > * {
@@ -26,7 +42,6 @@
     line-height: 45px;
     height: 100%;
     vertical-align: middle;
-    
     
   }
 
@@ -41,22 +56,23 @@
 
   .navbar{
     width: 70%;
-    text-align: left;
+    text-align: center;
     color: #025157;
     font-weight: 500;
     
   }
 
   .actions{
+    display: inline-flex;
+    flex-direction:row;
     width: 15%;
-    text-align: left;
+    text-align: right;
     font-size: 14px;
     font-weight: 600;
   }
 
   .actions > *{
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 0 10px;
   }
   
   .actions a {
@@ -66,16 +82,57 @@
   .actions button {
     color: white;
     background-color: #67b54b;
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px 14px;
     border: 0;
     border-radius: 5px;
   }
   
 
   .main{
-    margin-top: 140px;
+    margin-top: 285px;
     text-align: center;
+  }
+ 
+  .publish h3 {
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+  }
+  
+  .publish > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .publish > form {
+    display: flex;
+  }
+  
+  .publish > form p {
+    color: #025157;
+    margin-right: 18px;
+  }
+
+  .promo{
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items:center;       
+  }
+
+  .publish{
+    margin-left: 30px;
+  }
+
+  .explanatory-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .explanatory-video img{
+    width: 120px;
+    margin-top: 10px;
   }
