@@ -1,4 +1,5 @@
-    body {
+
+   body {
     background-color: white;
   }
 
@@ -17,7 +18,7 @@
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 60px;
     color: #025157;
     text-align: center;
     
@@ -195,4 +196,72 @@
 
  .article2 figure img{
   width: 50px;
+ }
+
+ @media (max-width: 575px) {
+
+  h1{
+    font-size: 30px;
+  }
+
+  .main{
+    margin-top: 130px;
+  }
+
+  .banner > img{
+    width: 100%;
+  }
+
+  .publish > form{
+    flex-direction: column;
+  }
+
+  .publish > form > div{
+    height: 50px;
+    margin-top: 10px;
+  }
+   .publish > form > div > input {
+    width: 65%;
+   }
+
+   .promo{
+    flex-direction: column;
+    max-width: 90%;
+   }
+   .explanatory-video > video{
+    width: 100%;
+   }
+
+   .publish{
+    margin-top: 10px;
+   }
+
+   .publish > h3 {
+    font-size: 25px;
+    line-height: 1.2;
+   }
+
+   .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%;
+  }
+
+  .feature-image {
+    display: none;
+  }
+
+ }
+
+ @media (min-width:576) and (max-width: 767px) {
+
+  
+  
+ }
+
+ @media (min-width:576) and (max-width: 767px) {
+
+  
+  
  }
